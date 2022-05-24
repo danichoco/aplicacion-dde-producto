@@ -1,0 +1,19 @@
+{
+  "name": "aplicacion-dde-producto",
+  "version": "1.0.0",
+  "description": "esta es una aplicacion para modificar los productos",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/danichoco/aplicacion-dde-producto.git"
+  },
+  "author": "daniela",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/danichoco/aplicacion-dde-producto/issues"
+  },
+  "homepage": "https://github.com/danichoco/aplicacion-dde-producto#readme"
+}
