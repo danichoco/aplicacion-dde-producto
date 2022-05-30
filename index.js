@@ -1,41 +1,42 @@
-import runCommandLine from "./mmm.js";
+
+import runCommandLine from "./prompt.js";
 import promptFact from 'prompt-sync'
 
 const prompt = promptFact()
+
+
+var products=[
+  {name:'harina', price:'$25', cant:30, um:'lbs'},
+  {name:'azucar', price:'$15', cant:18, um:'lbs'},
+  {name:'arroz', price:'$30', cant:50, um:'kg'},
+  {name:'aceite', price:'$18', cant:30, um:'lbs'},
+]
     
-  products={
-    name:['cafe','arroz','azucar','leche'],
-    cantidad:[10, 15, 30, 25],
-    UM:['lbs','kg', 'lbs', 'lts'],
-    precio:['$15', '$30', '$18','$25'],
-  }
+    for(var product of products){
+      console.log(product.name);
+    }
+
+function findProductsList(){
+    list=[];
+     
+  for( product of products){
+   list.push(products.name);
+  }  
+  
+    return list;
+   }
+
+   console.log(findProductsList())
 
 runCommandLine(function (command){
-   
-  if(command == 'add'){
-    var productsName = prompt('Especifique el nombre del producto: ');
-    products.push(productsName);
-  }
-  
-  else if(command == 'show'){
-    console.log(products);
-  }
-  
-  else if(command == 'modify'){
-    var products=prompt('Especifique el producto que desea modificar: ');
-    someProduct.price='$30';
-  }
-
-  
-  else if(command == 'list'){
+    
+  if(command == 'show'){
     console.log(products)
-  }
-
-  else if(command == 'delete'){
-    var products= prompt('Especifique el elemento que desea eliminar: ');
   }
   
   else{
-   console.log('el commando es: ' +command);
+   console.log('El comando es: ' +command)
   }
-});
+ });
+   
+   
